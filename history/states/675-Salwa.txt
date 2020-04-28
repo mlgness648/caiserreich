@@ -1,0 +1,20 @@
+state={
+	id=675
+	name="STATE_675"
+
+	history={
+		owner = JBS
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = JBS
+
+	}
+
+	provinces={
+		4932 10791
+	}
+	manpower=136012
+	state_category=wasteland
+}

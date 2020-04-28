@@ -1,0 +1,362 @@
+﻿###########################
+# World Tension Events
+###########################
+# By Zankoas
+###########################
+
+add_namespace = worldtension
+
+# Second Weltkrieg
+country_event = {
+	id = worldtension.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldtension.1" }
+
+	trigger = {
+		GER = {
+			has_war_with = FRA
+		}
+	}
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		clr_global_flag = KR_italy_balance
+		FRA = {
+			add_named_threat = {
+				threat = 50
+				name = second_weltkrieg_threat
+			}
+		}
+	}
+}
+
+# Second American Civil War
+country_event = {
+	id = worldtension.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldtension.2" }
+
+	trigger = {
+		tag = USA
+		OR = {
+			has_war_with = CSA
+			has_war_with = TEX
+		}
+	}
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		if = {
+			limit = {
+				country_exists = CSA
+				country_exists = TEX
+			}
+			USA = {
+				add_named_threat = {
+					threat = 15
+					name = second_american_civil_war_threat
+				}
+			}
+		}
+		else = {
+			USA = {
+				add_named_threat = {
+					threat = 10
+					name = second_american_civil_war_threat
+				}
+			}
+		}
+	}
+}
+
+# Russian Civil War
+country_event = {
+	id = worldtension.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldtension.3" }
+
+	trigger = {
+		RUS = {
+			has_war_with = SOV
+		}
+	}
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		SOV = {
+			add_named_threat = {
+				threat = 10
+				name = second_russian_civil_war_threat
+			}
+		}
+	}
+}
+
+# Spanish Civil War
+country_event = {
+	id = worldtension.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldtension.4" }
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		add_named_threat = {
+			threat = 7
+			name = spanish_civil_war_threat
+		}
+	}
+}
+
+# The Third Balkan War
+country_event = {
+	id = worldtension.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldtension.6" }
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		add_named_threat = {
+			threat = 6
+			name = fourth_balkan_war_threat
+		}
+	}
+}
+
+# Remilitarize Oltenia
+country_event = {
+	id = worldtension.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldtension.7" }
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		add_named_threat = {
+			threat = 4
+			name = remilitarize_oltenia_threat
+		}
+	}
+}
+
+# Haute-Savoie Crisis
+country_event = {
+	id = worldtension.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldtension.8" }
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		add_named_threat = {
+			threat = 10
+			name = savoyard_crisis_threat
+		}
+	}
+}
+
+# Russian expansionism
+country_event = {
+	id = worldtension.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldtension.9" }
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		add_named_threat = {
+			threat = 5
+			name = russian_expansionism_threat
+		}
+	}
+}
+
+# Kerensky assassinated
+country_event = {
+	id = worldtension.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldtension.10" }
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		add_named_threat = {
+			threat = 5
+			name = kerensky_assassinated_threat
+		}
+	}
+}
+
+# The end of American Democracy
+country_event = {
+	id = worldtension.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldtension.11" }
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		add_named_threat = {
+			threat = 7
+			name = macarthur_threat
+		}
+	}
+}
+
+
+# Mittelafrikan Collapse
+country_event = {
+	id = worldtension.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldtension.13" }
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		add_named_threat = {
+			threat = 8
+			name = mittelafrika_collapse_threat
+		}
+	}
+}
+
+# USA wins ACW (democratic)
+country_event = {
+	id = worldtension.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldtension.14" }
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		add_named_threat = {
+			threat = -5
+			name = democratic_win_acw_threat
+		}
+	}
+}
+
+# MacArthur wins ACW2
+country_event = {
+	id = worldtension.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldtension.15" }
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		add_named_threat = {
+			threat = 5
+			name = macarthur_wins_threat
+		}
+	}
+}
+
+# AUS wins ACW
+country_event = {
+	id = worldtension.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldtension.16" }
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		add_named_threat = {
+			threat = 10
+			name = aus_wins_acw_threat
+		}
+	}
+}
+
+# CSA wins ACW
+country_event = {
+	id = worldtension.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldtension.17" }
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		add_named_threat = {
+			threat = 10
+			name = csa_wins_acw_threat
+		}
+	}
+}
+
+# Belgrade Pact
+country_event = {
+	id = worldtension.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event worldtension.18" }
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		add_named_threat = {
+			threat = 4
+			name = belgrade_pact_threat
+		}
+	}
+}
+
+##
+#country_event = {
+#	id = worldtension.
+#
+#	is_triggered_only = yes
+#
+#	fire_only_once = yes
+#
+#	hidden = yes
+#
+#	option = {
+#		add_named_threat = { threat =  name = _threat }
+#	}
+#}

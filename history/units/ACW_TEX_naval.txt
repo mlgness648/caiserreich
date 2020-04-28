@@ -1,0 +1,21 @@
+﻿units = {
+	fleet = {
+		name = "The Loyal Fleet"
+		naval_base = 7552 #New Orleans
+		task_force = {
+			name = "Atlantic Battle Fleet"
+			location = 7552 #New Orleans
+			ship = { name = "USS Lexington" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = TEX version_name = "Lexington Class" } } }
+			ship = { name = "USS New York" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = TEX version_name = "New York /Arkansas Class" } } }
+			ship = { name = "USS Arizona" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = TEX version_name = "Pennsylvania/New Mexico Class" } } }
+			ship = { name = "USS Pennsylvania" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = TEX version_name = "Pennsylvania/New Mexico Class" } } }
+			ship = { name = "USS Missoula" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TEX version_name = "Pittsburgh/Tennesee Class" } } }
+			ship = { name = "USS Seattle" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TEX version_name = "Pittsburgh/Tennesee Class" } } }
+			ship = { name = "USS Satterlee" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TEX version_name = "Clemson/Wickes Class" } } }
+			ship = { name = "USS Semmes" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TEX version_name = "Clemson/Wickes Class" } } }
+			ship = { name = "USS Alwyin" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TEX version_name = "Farragut/Mahan Class" } } }
+			ship = { name = "USS Dale" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = TEX version_name = "Farragut/Mahan Class" } } }
+		}
+		
+	}
+}

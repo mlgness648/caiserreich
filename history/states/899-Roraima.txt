@@ -1,0 +1,20 @@
+state = {
+	id = 899
+	name = "STATE_899"
+
+	history = {
+		
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			13403 1
+		}
+	}
+
+	provinces = {
+		13387 13394 13403 13409
+	}
+	manpower = 14400
+	state_category = wasteland
+}
